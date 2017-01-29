@@ -75,20 +75,6 @@ void newGen(int** lifeArr, int rows, int columns, int gens) {
 
 	int adj = 0; // initialize adjs sum
 
-	// // ========================
-	// // START 2D array generation
-	// // ========================
-	// int** nextlifeArr = (int**) calloc(rows, sizeof(int**)); // pointer calloc to pointer calloc cast int - multidimensional array
-	// for (int i = 0; i < rows; i++) {
-	// 	nextlifeArr[i] = (int*) calloc(rows, sizeof(int*)); // fill it in with 1D array 
-	// }
-	// for (int i = 0; i < rows; i++)
-	// 	for (int j = 0; j < columns; j++)
-	// 		nextlifeArr[i][j] = DEAD;
-	// // ========================
-	// // END 2D array generation
-	// // ========================
-
 
 	for (int thisGen = 0; thisGen < gens; thisGen++) { // we allocate memory for new 2D array, because we don't want to change the original
 
