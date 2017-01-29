@@ -46,7 +46,7 @@ void initGen(int** lifeArr, int rows, int columns, char* filename) { // 10 rows,
 		}
 	}
 
-	fclose(file);
+	fclose(file); // free memory stream
 
 	printf("Generation 0:\n");
 	printGen(lifeArr, rows, columns);
@@ -157,7 +157,7 @@ void newGen(int** lifeArr, int rows, int columns, int gens) {
 	// we free up the original lifeArr in main memory space
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
 	// ========================
 	// DEFAULTS
 	// ========================
