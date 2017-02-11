@@ -6,7 +6,6 @@ void print_environment (char** environment) {
 	for (int i = 0; environment[i] != NULL; i++) { 
 		puts(environment[i]);
 	}
-	exit(0);
 }
 
 int find_command_index(int argc, char **argv, bool if_i_flag) { // we need to find new environment size only for NO -i option
