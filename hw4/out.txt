@@ -1,0 +1,5 @@
+Makefile
+out.txt
+README
+sh
+sh.c

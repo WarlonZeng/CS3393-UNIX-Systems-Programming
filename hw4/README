@@ -1,0 +1,7 @@
+redirection to shell does not work properly after i/o redirection, i.e., ls > out.txt
+tried closing fd, idk. contents are correct though.
+
+cd updates PWD and OLDPWD accordingly, i.e., cd, ls > out.txt.
+execvp throws error with redirection symbols, had to update args accordingly to exclude.
+
+-- all fixed
