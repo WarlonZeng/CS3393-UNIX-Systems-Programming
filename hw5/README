@@ -1,0 +1,12 @@
+How to use:
+
+Two files.
+
+For servers: ./chat_server -u server -p 20000
+For clients: ./chat_client -u client -i localhost -p 20000
+
+This program is specifically designed for 2 person chat: one client, one server.
+The client can disconnect at will by ctrl-c keyboard interrupt.
+A new client can connect to the server. The server closes reading end and accepts new client with new fds.
+
+Followed by per specs, server and client act alike and server can wait for another client. Server will sit there.
