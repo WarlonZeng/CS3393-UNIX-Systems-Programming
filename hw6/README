@@ -1,0 +1,28 @@
+How to use:
+Two files.
+
+For servers: ./chat_server -u server -p 20000
+For clients: ./chat_client -u client -i localhost -p 20000
+
+QUICK TEST:
+./chat_server
+./chat_client
+
+3 terminals - 1 server, 2 clients.
+
+SUPPORTS: 
+concurrent clients
+message queue
+client queue
+clients can see who is online
+client can see who left and joined during session
+help messages with -h command
+defaults with no arguments on command line
+locks for specific operations for shared resources
+condition variable on consumer thread - producers are clients
+thread exits
+client CTRL + C server detection support (server interprets the same way as client typing 'exit')
+bye message after typing 'exit'
+lots of documenting
+error detection
+probably a few more 
